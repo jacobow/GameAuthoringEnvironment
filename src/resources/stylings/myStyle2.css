@@ -1,0 +1,60 @@
+.menu-bar {
+      -fx-text-fill: black;
+
+ }
+.menu {
+      -fx-text-fill: black;
+
+}
+.menu:showing {
+      -fx-text-fill: black;
+
+ }
+.menu .label {
+      -fx-text-fill: black;
+
+ }
+.menu:showing .label {
+      -fx-text-fill: black;
+
+ }
+.button {
+    -fx-background-color: rgba(255, 255, 255, .1);
+      -fx-text-fill: white;
+	  -fx-font-size:12px;
+
+}
+
+.button hover{
+    -fx-background-color: rgba(255, 255, 255, .5);
+       -fx-background-radius: 5,4,3,5;
+       -fx-background-insets: 0,1,2,0;
+       -fx-text-fill: white;
+	   -fx-font-size:12px;
+	   -fx-background-insets: 0,1,2,3;
+	   -fx-background-radius: 3,2,2,2;
+
+}
+.button armed{
+    -fx-background-color: rgba(255, 255, 255, .8);
+       -fx-background-radius: 5,4,3,5;
+       -fx-background-insets: 0,1,2,0;
+       -fx-text-fill: white;
+	   -fx-font-size:12px;
+	   -fx-background-insets: 0,1,2,3;
+	       -fx-background-radius: 3,2,2,2;
+
+}
+#pane {
+	-fx-background-image: url("arrow.jpg");
+}
+.scroll-pane {
+   -fx-background: #111111;
+}
+
+.label{
+    -fx-text-fill: linear-gradient(white, #d0d0d0);
+    -fx-background-color: transparent;
+	-fx-font-size: 10px;
+
+}

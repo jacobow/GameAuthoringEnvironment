@@ -1,0 +1,17 @@
+<gameengine.GameWorld>
+  <myEntities/>
+  <myFakeEntities/>
+  <myEntitySearchMap/>
+  <myBaseEntities/>
+  <myPlayerEntities/>
+  <myCollisionSubsystems/>
+  <myZoneSubsystems/>
+  <myKeyToAbilityMap/>
+  <myControllerToIndexMap/>
+  <myControllerToAbilityMapList/>
+  <myWinConditions/>
+  <myOnClickAbility class="gameengine.systems.abilities.NullAbility"/>
+  <myOnClickNotifier class="javafx.beans.property.SimpleBooleanProperty">false</myOnClickNotifier>
+  <mapHeight>0.0</mapHeight>
+  <mapWidth>0.0</mapWidth>
+</gameengine.GameWorld>

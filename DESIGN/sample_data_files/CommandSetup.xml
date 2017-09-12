@@ -1,0 +1,8 @@
+<Command name = "commandName">
+	<sound> audioclip.wav </sound>
+	<key> S </key>
+	<ObjectTypesAffected> 
+		<Object> player1 </Object>
+		<Object> defenseTower2 </Object>
+	</ObjectTypesAffected>
+</Command>

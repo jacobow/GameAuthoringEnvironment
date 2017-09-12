@@ -1,0 +1,4 @@
+# Part 1
+Our designs were very similar.  My team's design is more strictly modeled after a entity-component-system, while the other game engine is more closely tailored to the tower defense genre.  Both of us have found composition to be more useful than oop/inheritance, and both of us have made heavy use of observer design patterns.  We both thought the best parts of our API's were the customizability, as we both basically made use components (mine through a entity-component-system and his through maps which held components of customization).  We both talked about how to deal with errors of placing objects in invalid locations, and determine it would be best delegated to the game engine side of things.
+# Part 2
+I am most excited to work on the collision manager.  I am also most worried about it.  We both discussed how it would involve writing a large range of handlers, and worked specifically through the use case of a projectile hitting a sprite.

@@ -1,0 +1,352 @@
+<gameengine.GameWorld>
+  <myEntities>
+    <myEntities class="gameengine.entities.Entity">
+      <myID>Player1</myID>
+      <myAttributes>
+        <gameengine.attributes.Spacial>
+          <myX class="javafx.beans.property.SimpleDoubleProperty">2549.0</myX>
+          <myY class="javafx.beans.property.SimpleDoubleProperty">484.5</myY>
+          <myOrientation class="javafx.beans.property.SimpleDoubleProperty">0.0</myOrientation>
+          <mySpeed>150.0</mySpeed>
+          <mySpeedModifier>1.0</mySpeedModifier>
+          <myImageFilePath>resources/images/Racing/Cars/car_blue_small_1.png</myImageFilePath>
+          <amIFocused>false</amIFocused>
+        </gameengine.attributes.Spacial>
+        <gameengine.attributes.Racer>
+          <myStart>false</myStart>
+          <myFinish>false</myFinish>
+          <myFinishing>false</myFinishing>
+          <myLapCount>0</myLapCount>
+        </gameengine.attributes.Racer>
+        <gameengine.attributes.Player>
+          <winStatus class="javafx.beans.property.SimpleDoubleProperty">0.0</winStatus>
+        </gameengine.attributes.Player>
+        <gameengine.attributes.Physical>
+          <preCollisionX>2549.0</preCollisionX>
+          <preCollisionY>484.5</preCollisionY>
+          <preCollisionOrientation>0.0</preCollisionOrientation>
+        </gameengine.attributes.Physical>
+      </myAttributes>
+      <myAbilityKeys>
+        <entry>
+          <gameengine.systems.abilities.RotateLeft>
+            <myMover class="gameengine.attributes.Spacial" reference="../../../../myAttributes/gameengine.attributes.Spacial"/>
+            <myCooldown>0.0</myCooldown>
+          </gameengine.systems.abilities.RotateLeft>
+          <javafx.scene.input.KeyCode>A</javafx.scene.input.KeyCode>
+        </entry>
+        <entry>
+          <gameengine.systems.abilities.RotateRight>
+            <myMover class="gameengine.attributes.Spacial" reference="../../../../myAttributes/gameengine.attributes.Spacial"/>
+            <myCooldown>0.0</myCooldown>
+          </gameengine.systems.abilities.RotateRight>
+          <javafx.scene.input.KeyCode>D</javafx.scene.input.KeyCode>
+        </entry>
+        <entry>
+          <gameengine.systems.abilities.MoveLeft>
+            <myMover class="gameengine.attributes.Spacial" reference="../../../../myAttributes/gameengine.attributes.Spacial"/>
+            <myCooldown>0.0</myCooldown>
+          </gameengine.systems.abilities.MoveLeft>
+          <javafx.scene.input.KeyCode>W</javafx.scene.input.KeyCode>
+        </entry>
+        <entry>
+          <gameengine.systems.abilities.MoveRight>
+            <myMover class="gameengine.attributes.Spacial" reference="../../../../myAttributes/gameengine.attributes.Spacial"/>
+            <myCooldown>0.0</myCooldown>
+          </gameengine.systems.abilities.MoveRight>
+          <javafx.scene.input.KeyCode>S</javafx.scene.input.KeyCode>
+        </entry>
+      </myAbilityKeys>
+      <myAbilityControllerKeys/>
+      <myAbilityControllers/>
+      <myAttributeMap>
+        <entry>
+          <java-class>gameengine.attributes.Racer</java-class>
+          <gameengine.attributes.Racer reference="../../../myAttributes/gameengine.attributes.Racer"/>
+        </entry>
+        <entry>
+          <java-class>gameengine.attributes.Player</java-class>
+          <gameengine.attributes.Player reference="../../../myAttributes/gameengine.attributes.Player"/>
+        </entry>
+        <entry>
+          <java-class>gameengine.attributes.Spacial</java-class>
+          <gameengine.attributes.Spacial reference="../../../myAttributes/gameengine.attributes.Spacial"/>
+        </entry>
+        <entry>
+          <java-class>gameengine.attributes.Physical</java-class>
+          <gameengine.attributes.Physical reference="../../../myAttributes/gameengine.attributes.Physical"/>
+        </entry>
+      </myAttributeMap>
+      <myAbilitiesMap>
+        <entry>
+          <java-class>gameengine.systems.abilities.RotateLeft</java-class>
+          <gameengine.systems.abilities.RotateLeft reference="../../../myAbilityKeys/entry/gameengine.systems.abilities.RotateLeft"/>
+        </entry>
+        <entry>
+          <java-class>gameengine.systems.abilities.RotateRight</java-class>
+          <gameengine.systems.abilities.RotateRight reference="../../../myAbilityKeys/entry[2]/gameengine.systems.abilities.RotateRight"/>
+        </entry>
+        <entry>
+          <java-class>gameengine.systems.abilities.MoveRight</java-class>
+          <gameengine.systems.abilities.MoveRight reference="../../../myAbilityKeys/entry[4]/gameengine.systems.abilities.MoveRight"/>
+        </entry>
+        <entry>
+          <java-class>gameengine.systems.abilities.MoveLeft</java-class>
+          <gameengine.systems.abilities.MoveLeft reference="../../../myAbilityKeys/entry[3]/gameengine.systems.abilities.MoveLeft"/>
+        </entry>
+      </myAbilitiesMap>
+    </myEntities>
+    <myEntities class="gameengine.entities.Entity">
+      <myID>StartLine</myID>
+      <myAttributes>
+        <gameengine.attributes.Spacial>
+          <myX class="javafx.beans.property.SimpleDoubleProperty">824.0</myX>
+          <myY class="javafx.beans.property.SimpleDoubleProperty">404.0</myY>
+          <myOrientation class="javafx.beans.property.SimpleDoubleProperty">0.0</myOrientation>
+          <mySpeed>0.0</mySpeed>
+          <mySpeedModifier>1.0</mySpeedModifier>
+          <myImageFilePath>resources/images/Racing/Objects/barrier_white_race.png</myImageFilePath>
+          <amIFocused>false</amIFocused>
+        </gameengine.attributes.Spacial>
+        <gameengine.attributes.StartLine/>
+        <gameengine.attributes.Physical>
+          <preCollisionX>824.0</preCollisionX>
+          <preCollisionY>404.0</preCollisionY>
+          <preCollisionOrientation>0.0</preCollisionOrientation>
+        </gameengine.attributes.Physical>
+      </myAttributes>
+      <myAbilityKeys/>
+      <myAbilityControllerKeys/>
+      <myAbilityControllers/>
+      <myAttributeMap>
+        <entry>
+          <java-class>gameengine.attributes.Spacial</java-class>
+          <gameengine.attributes.Spacial reference="../../../myAttributes/gameengine.attributes.Spacial"/>
+        </entry>
+        <entry>
+          <java-class>gameengine.attributes.StartLine</java-class>
+          <gameengine.attributes.StartLine reference="../../../myAttributes/gameengine.attributes.StartLine"/>
+        </entry>
+        <entry>
+          <java-class>gameengine.attributes.Physical</java-class>
+          <gameengine.attributes.Physical reference="../../../myAttributes/gameengine.attributes.Physical"/>
+        </entry>
+      </myAttributeMap>
+      <myAbilitiesMap/>
+    </myEntities>
+    <myEntities class="gameengine.entities.Entity">
+      <myID>FinishLine</myID>
+      <myAttributes>
+        <gameengine.attributes.Spacial>
+          <myX class="javafx.beans.property.SimpleDoubleProperty">2511.0</myX>
+          <myY class="javafx.beans.property.SimpleDoubleProperty">335.0</myY>
+          <myOrientation class="javafx.beans.property.SimpleDoubleProperty">0.0</myOrientation>
+          <mySpeed>0.0</mySpeed>
+          <mySpeedModifier>1.0</mySpeedModifier>
+          <myImageFilePath>resources/images/Racing/Objects/barrier_red_race.png</myImageFilePath>
+          <amIFocused>false</amIFocused>
+        </gameengine.attributes.Spacial>
+        <gameengine.attributes.FinishLine>
+          <myRacers/>
+          <maxLaps>3.0</maxLaps>
+        </gameengine.attributes.FinishLine>
+        <gameengine.attributes.Physical>
+          <preCollisionX>2511.0</preCollisionX>
+          <preCollisionY>335.0</preCollisionY>
+          <preCollisionOrientation>0.0</preCollisionOrientation>
+        </gameengine.attributes.Physical>
+      </myAttributes>
+      <myAbilityKeys/>
+      <myAbilityControllerKeys/>
+      <myAbilityControllers/>
+      <myAttributeMap>
+        <entry>
+          <java-class>gameengine.attributes.FinishLine</java-class>
+          <gameengine.attributes.FinishLine reference="../../../myAttributes/gameengine.attributes.FinishLine"/>
+        </entry>
+        <entry>
+          <java-class>gameengine.attributes.Spacial</java-class>
+          <gameengine.attributes.Spacial reference="../../../myAttributes/gameengine.attributes.Spacial"/>
+        </entry>
+        <entry>
+          <java-class>gameengine.attributes.Physical</java-class>
+          <gameengine.attributes.Physical reference="../../../myAttributes/gameengine.attributes.Physical"/>
+        </entry>
+      </myAttributeMap>
+      <myAbilitiesMap/>
+    </myEntities>
+    <myEntities class="gameengine.entities.Entity">
+      <myID>RaceTrack</myID>
+      <myAttributes>
+        <gameengine.attributes.Spacial>
+          <myX class="javafx.beans.property.SimpleDoubleProperty">0.0</myX>
+          <myY class="javafx.beans.property.SimpleDoubleProperty">0.0</myY>
+          <myOrientation class="javafx.beans.property.SimpleDoubleProperty">0.0</myOrientation>
+          <mySpeed>0.0</mySpeed>
+          <mySpeedModifier>1.0</mySpeedModifier>
+          <myImageFilePath>resources/aaaBIGRaceCourse.png</myImageFilePath>
+          <amIFocused>false</amIFocused>
+        </gameengine.attributes.Spacial>
+        <gameengine.attributes.Wall/>
+        <gameengine.attributes.Physical>
+          <preCollisionX>0.0</preCollisionX>
+          <preCollisionY>0.0</preCollisionY>
+          <preCollisionOrientation>0.0</preCollisionOrientation>
+        </gameengine.attributes.Physical>
+      </myAttributes>
+      <myAbilityKeys/>
+      <myAbilityControllerKeys/>
+      <myAbilityControllers/>
+      <myAttributeMap>
+        <entry>
+          <java-class>gameengine.attributes.Wall</java-class>
+          <gameengine.attributes.Wall reference="../../../myAttributes/gameengine.attributes.Wall"/>
+        </entry>
+        <entry>
+          <java-class>gameengine.attributes.Spacial</java-class>
+          <gameengine.attributes.Spacial reference="../../../myAttributes/gameengine.attributes.Spacial"/>
+        </entry>
+        <entry>
+          <java-class>gameengine.attributes.Physical</java-class>
+          <gameengine.attributes.Physical reference="../../../myAttributes/gameengine.attributes.Physical"/>
+        </entry>
+      </myAttributeMap>
+      <myAbilitiesMap/>
+    </myEntities>
+    <myEntities class="gameengine.entities.Entity">
+      <myID>Player2</myID>
+      <myAttributes>
+        <gameengine.attributes.Spacial>
+          <myX class="javafx.beans.property.SimpleDoubleProperty">2640.0</myX>
+          <myY class="javafx.beans.property.SimpleDoubleProperty">489.0</myY>
+          <myOrientation class="javafx.beans.property.SimpleDoubleProperty">0.0</myOrientation>
+          <mySpeed>150.0</mySpeed>
+          <mySpeedModifier>1.0</mySpeedModifier>
+          <myImageFilePath>resources/images/Racing/Cars/car_black_small_4.png</myImageFilePath>
+          <amIFocused>false</amIFocused>
+        </gameengine.attributes.Spacial>
+        <gameengine.attributes.Racer>
+          <myStart>false</myStart>
+          <myFinish>false</myFinish>
+          <myFinishing>false</myFinishing>
+          <myLapCount>0</myLapCount>
+        </gameengine.attributes.Racer>
+        <gameengine.attributes.Physical>
+          <preCollisionX>2640.0</preCollisionX>
+          <preCollisionY>489.0</preCollisionY>
+          <preCollisionOrientation>0.0</preCollisionOrientation>
+        </gameengine.attributes.Physical>
+        <gameengine.attributes.Player>
+          <winStatus class="javafx.beans.property.SimpleDoubleProperty">0.0</winStatus>
+        </gameengine.attributes.Player>
+      </myAttributes>
+      <myAbilityKeys/>
+      <myAbilityControllerKeys>
+        <entry>
+          <gameengine.systems.abilities.JoyStickRotation>
+            <myMover class="gameengine.attributes.Spacial" reference="../../../../myAttributes/gameengine.attributes.Spacial"/>
+            <myCooldown>0.0</myCooldown>
+          </gameengine.systems.abilities.JoyStickRotation>
+          <string>Controller 1 :Right JoyStick axis</string>
+        </entry>
+        <entry>
+          <gameengine.systems.abilities.MoveRight>
+            <myMover class="gameengine.attributes.Spacial" reference="../../../../myAttributes/gameengine.attributes.Spacial"/>
+            <myCooldown>0.0</myCooldown>
+          </gameengine.systems.abilities.MoveRight>
+          <string>Controller 1 :Left JoyStick axis</string>
+        </entry>
+      </myAbilityControllerKeys>
+      <myAbilityControllers>
+        <entry>
+          <gameengine.systems.abilities.JoyStickRotation reference="../../../myAbilityControllerKeys/entry/gameengine.systems.abilities.JoyStickRotation"/>
+          <int>1</int>
+        </entry>
+        <entry>
+          <gameengine.systems.abilities.MoveRight reference="../../../myAbilityControllerKeys/entry[2]/gameengine.systems.abilities.MoveRight"/>
+          <int>1</int>
+        </entry>
+      </myAbilityControllers>
+      <myAttributeMap>
+        <entry>
+          <java-class>gameengine.attributes.Racer</java-class>
+          <gameengine.attributes.Racer reference="../../../myAttributes/gameengine.attributes.Racer"/>
+        </entry>
+        <entry>
+          <java-class>gameengine.attributes.Player</java-class>
+          <gameengine.attributes.Player reference="../../../myAttributes/gameengine.attributes.Player"/>
+        </entry>
+        <entry>
+          <java-class>gameengine.attributes.Spacial</java-class>
+          <gameengine.attributes.Spacial reference="../../../myAttributes/gameengine.attributes.Spacial"/>
+        </entry>
+        <entry>
+          <java-class>gameengine.attributes.Physical</java-class>
+          <gameengine.attributes.Physical reference="../../../myAttributes/gameengine.attributes.Physical"/>
+        </entry>
+      </myAttributeMap>
+      <myAbilitiesMap/>
+    </myEntities>
+  </myEntities>
+  <myFakeEntities/>
+  <myEntitySearchMap/>
+  <myBaseEntities/>
+  <myPlayerEntities/>
+  <myCollisionSubsystems>
+    <myCollisionSubsystems class="gameengine.systems.collision_handlers.FinishLineHandler">
+      <myQueue class="linked-list"/>
+      <myWinners/>
+    </myCollisionSubsystems>
+    <myCollisionSubsystems class="gameengine.systems.collision_handlers.SolidHandler">
+      <collisionQueue class="linked-list"/>
+    </myCollisionSubsystems>
+  </myCollisionSubsystems>
+  <myZoneSubsystems/>
+  <myKeyToAbilityMap>
+    <myKeyToAbilityMap>
+      <KeyCode>W</KeyCode>
+      <Abilities class="gameengine.systems.abilities.MoveLeft" reference="../../../myEntities/myEntities/myAbilityKeys/entry[3]/gameengine.systems.abilities.MoveLeft"/>
+    </myKeyToAbilityMap>
+    <myKeyToAbilityMap>
+      <KeyCode>D</KeyCode>
+      <Abilities class="gameengine.systems.abilities.RotateRight" reference="../../../myEntities/myEntities/myAbilityKeys/entry[2]/gameengine.systems.abilities.RotateRight"/>
+    </myKeyToAbilityMap>
+    <myKeyToAbilityMap>
+      <KeyCode>S</KeyCode>
+      <Abilities class="gameengine.systems.abilities.MoveRight" reference="../../../myEntities/myEntities/myAbilityKeys/entry[4]/gameengine.systems.abilities.MoveRight"/>
+    </myKeyToAbilityMap>
+    <myKeyToAbilityMap>
+      <KeyCode>A</KeyCode>
+      <Abilities class="gameengine.systems.abilities.RotateLeft" reference="../../../myEntities/myEntities/myAbilityKeys/entry/gameengine.systems.abilities.RotateLeft"/>
+    </myKeyToAbilityMap>
+  </myKeyToAbilityMap>
+  <myControllerToIndexMap/>
+  <myControllerToAbilityMapList>
+    <myControllerToAbilityMapList>
+      <myControls>
+        <entry>
+          <string>Right JoyStick axis</string>
+          <gameengine.systems.abilities.JoyStickRotation reference="../../../../../myEntities/myEntities[5]/myAbilityControllerKeys/entry/gameengine.systems.abilities.JoyStickRotation"/>
+        </entry>
+        <entry>
+          <string>Left JoyStick axis</string>
+          <gameengine.systems.abilities.MoveRight reference="../../../../../myEntities/myEntities[5]/myAbilityControllerKeys/entry[2]/gameengine.systems.abilities.MoveRight"/>
+        </entry>
+      </myControls>
+    </myControllerToAbilityMapList>
+  </myControllerToAbilityMapList>
+  <myWinConditions>
+    <myWinConditions class="gameengine.systems.wincondition_handlers.FinishLineWinCondition">
+      <remainingBaseEntities/>
+      <remainingPlayerEntities>
+        <gameengine.entities.Entity reference="../../../../myEntities/myEntities"/>
+      </remainingPlayerEntities>
+      <mySubject class="gameengine.GameWorld" reference="../../.."/>
+    </myWinConditions>
+  </myWinConditions>
+  <myStatistics/>
+  <myOnClickAbility class="gameengine.systems.abilities.NullAbility"/>
+  <myOnClickNotifier class="javafx.beans.property.SimpleBooleanProperty">false</myOnClickNotifier>
+  <mapHeight>0.0</mapHeight>
+  <mapWidth>0.0</mapWidth>
+</gameengine.GameWorld>

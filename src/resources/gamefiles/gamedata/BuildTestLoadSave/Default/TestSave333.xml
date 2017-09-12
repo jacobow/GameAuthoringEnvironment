@@ -1,0 +1,18 @@
+<gamedata.data.GameData>
+  <levels class="linked-hash-map">
+    <entry>
+      <string>LevelOne</string>
+      <gamedata.data.LevelData>
+        <gameName>TestSave333</gameName>
+        <levelName>LevelOne</levelName>
+        <background>resources/Brick_Wall.png</background>
+      </gamedata.data.LevelData>
+    </entry>
+  </levels>
+  <packageName>BuildTestLoadSave</packageName>
+  <currentLevelName>LevelOne</currentLevelName>
+  <gameName>TestSave333</gameName>
+  <previousUserName>Default</previousUserName>
+  <userName>Default</userName>
+  <icon>resources\duketurtle.png</icon>
+</gamedata.data.GameData>

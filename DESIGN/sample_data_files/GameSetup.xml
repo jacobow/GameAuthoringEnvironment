@@ -1,0 +1,19 @@
+<Game> Title of Game </Game>
+<Author> Name of Author </Author>
+<BackgroundMusic> Background Song </BackgroundMusic>
+<Styling> CSS File Name </Styling>
+<ObjectList>
+	<Object1> ObjectType
+		<Location> x y </Location>
+		<Attribute1> attribute </Attribute1>
+		<Attribute2> attribute2 </Attribute2>
+		<Ability1> ability1 </Ability1>
+	</Object1>
+	<Object2>
+		<Location> x y </Location>
+		<Attribute1> attribute </Attribute1>
+		<Attribute2> attribute2 </Attribute2>
+		<Ability1> ability1 </Ability1>
+	<Object2>
+	</ObjectList>
+	

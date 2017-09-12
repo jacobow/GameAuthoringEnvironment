@@ -1,0 +1,225 @@
+<gameengine.GameWorld>
+  <myEntities>
+    <myEntities class="gameengine.entities.Entity">
+      <myID>turtle</myID>
+      <myAttributes>
+        <gameengine.attributes.Spacial>
+          <myX class="javafx.beans.property.SimpleDoubleProperty">169.24532044695286</myX>
+          <myY class="javafx.beans.property.SimpleDoubleProperty">164.8610587123866</myY>
+          <myOrientation class="javafx.beans.property.SimpleDoubleProperty">-113.1594873194839</myOrientation>
+          <mySpeed>100.0</mySpeed>
+          <mySpeedModifier>1.0</mySpeedModifier>
+          <myImageFilePath>resources\turtleImage.png</myImageFilePath>
+          <amIFocused>false</amIFocused>
+        </gameengine.attributes.Spacial>
+        <gameengine.attributes.Path>
+          <myEntity class="gameengine.entities.Entity" reference="../../.."/>
+          <myRotator>
+            <myMover class="gameengine.attributes.Spacial" reference="../../../gameengine.attributes.Spacial"/>
+            <myCooldown defined-in="gameengine.systems.abilities.MovementAbility">0.0</myCooldown>
+            <myCooldown>0.0</myCooldown>
+          </myRotator>
+          <myMover>
+            <myMover class="gameengine.attributes.Spacial" reference="../../../gameengine.attributes.Spacial"/>
+            <myCooldown>0.0</myCooldown>
+          </myMover>
+          <myAbilitiesToActivate/>
+          <myPointsList>
+            <entry>
+              <double-array>
+                <double>253.66666666666669</double>
+                <double>90.33333333333334</double>
+              </double-array>
+              <gameengine.systems.abilities.NullAbility/>
+            </entry>
+            <entry>
+              <double-array>
+                <double>427.6666666666667</double>
+                <double>89.66666666666666</double>
+              </double-array>
+              <gameengine.systems.abilities.NullAbility/>
+            </entry>
+            <entry>
+              <double-array>
+                <double>448.3333333333333</double>
+                <double>142.33333333333331</double>
+              </double-array>
+              <gameengine.systems.abilities.NullAbility/>
+            </entry>
+            <entry>
+              <double-array>
+                <double>453.0</double>
+                <double>263.0</double>
+              </double-array>
+              <gameengine.systems.abilities.NullAbility/>
+            </entry>
+            <entry>
+              <double-array>
+                <double>395.0</double>
+                <double>351.6666666666667</double>
+              </double-array>
+              <gameengine.systems.abilities.NullAbility/>
+            </entry>
+            <entry>
+              <double-array>
+                <double>207.0</double>
+                <double>349.0</double>
+              </double-array>
+              <gameengine.systems.abilities.NullAbility/>
+            </entry>
+            <entry>
+              <double-array>
+                <double>208.33333333333334</double>
+                <double>206.33333333333331</double>
+              </double-array>
+              <gameengine.systems.abilities.NullAbility/>
+            </entry>
+            <entry>
+              <double-array>
+                <double>208.33333333333334</double>
+                <double>125.66666666666669</double>
+              </double-array>
+              <gameengine.systems.abilities.NullAbility/>
+            </entry>
+            <entry>
+              <double-array>
+                <double>253.0</double>
+                <double>89.0</double>
+              </double-array>
+              <gameengine.systems.abilities.NullAbility/>
+            </entry>
+          </myPointsList>
+          <myPointIterator class="java.util.ArrayList$ListItr">
+            <cursor>8</cursor>
+            <lastRet>7</lastRet>
+            <expectedModCount>0</expectedModCount>
+            <outer-class defined-in="java.util.ArrayList$Itr">
+              <double-array reference="../../../myPointsList/entry/double-array"/>
+              <double-array reference="../../../myPointsList/entry[2]/double-array"/>
+              <double-array reference="../../../myPointsList/entry[3]/double-array"/>
+              <double-array reference="../../../myPointsList/entry[4]/double-array"/>
+              <double-array reference="../../../myPointsList/entry[5]/double-array"/>
+              <double-array reference="../../../myPointsList/entry[6]/double-array"/>
+              <double-array reference="../../../myPointsList/entry[7]/double-array"/>
+              <double-array reference="../../../myPointsList/entry[8]/double-array"/>
+              <double-array reference="../../../myPointsList/entry[9]/double-array"/>
+            </outer-class>
+            <outer-class reference="../outer-class"/>
+          </myPointIterator>
+          <shouldIRepeat>true</shouldIRepeat>
+          <myCurrentPoint reference="../myPointsList/entry[8]/double-array"/>
+        </gameengine.attributes.Path>
+      </myAttributes>
+      <myAbilityKeys>
+        <entry>
+          <gameengine.systems.abilities.MoveForward>
+            <myMover class="gameengine.attributes.Spacial" reference="../../../../myAttributes/gameengine.attributes.Spacial"/>
+            <myCooldown>0.0</myCooldown>
+          </gameengine.systems.abilities.MoveForward>
+          <javafx.scene.input.KeyCode>W</javafx.scene.input.KeyCode>
+        </entry>
+        <entry>
+          <gameengine.systems.abilities.CreateEntity>
+            <myParent class="gameengine.entities.Entity" reference="../../../.."/>
+            <myChild class="gameengine.entities.Entity">
+              <myID>bullet</myID>
+              <myAttributes>
+                <gameengine.attributes.Child>
+                  <myParent class="gameengine.entities.Entity" reference="../../../../../../.."/>
+                </gameengine.attributes.Child>
+                <gameengine.attributes.Spacial>
+                  <myX class="javafx.beans.property.SimpleDoubleProperty">0.0</myX>
+                  <myY class="javafx.beans.property.SimpleDoubleProperty">0.0</myY>
+                  <myOrientation class="javafx.beans.property.SimpleDoubleProperty">0.0</myOrientation>
+                  <mySpeed>500.0</mySpeed>
+                  <mySpeedModifier>1.0</mySpeedModifier>
+                  <myImageFilePath>resources\bbill.png</myImageFilePath>
+                  <amIFocused>false</amIFocused>
+                </gameengine.attributes.Spacial>
+                <gameengine.attributes.Range>
+                  <myRange>500.0</myRange>
+                </gameengine.attributes.Range>
+              </myAttributes>
+              <myAbilityKeys/>
+              <myAbilityControllerKeys/>
+              <myAbilityControllers/>
+              <myAttributeMap>
+                <entry>
+                  <java-class>gameengine.attributes.Range</java-class>
+                  <gameengine.attributes.Range reference="../../../myAttributes/gameengine.attributes.Range"/>
+                </entry>
+                <entry>
+                  <java-class>gameengine.attributes.Child</java-class>
+                  <gameengine.attributes.Child reference="../../../myAttributes/gameengine.attributes.Child"/>
+                </entry>
+                <entry>
+                  <java-class>gameengine.attributes.Spacial</java-class>
+                  <gameengine.attributes.Spacial reference="../../../myAttributes/gameengine.attributes.Spacial"/>
+                </entry>
+              </myAttributeMap>
+              <myAbilitiesMap/>
+            </myChild>
+            <myGod class="gameengine.GameWorld" reference="../../../../../.."/>
+            <myCooldown>5.0</myCooldown>
+            <cooldownCounter>1</cooldownCounter>
+            <numPrimaryCooldowns>10</numPrimaryCooldowns>
+            <mySecondaryCooldown>5.0</mySecondaryCooldown>
+            <myPrimaryCooldown>0.5</myPrimaryCooldown>
+            <index>11</index>
+          </gameengine.systems.abilities.CreateEntity>
+          <javafx.scene.input.KeyCode>L</javafx.scene.input.KeyCode>
+        </entry>
+      </myAbilityKeys>
+      <myAbilityControllerKeys/>
+      <myAbilityControllers/>
+      <myAttributeMap>
+        <entry>
+          <java-class>gameengine.attributes.Path</java-class>
+          <gameengine.attributes.Path reference="../../../myAttributes/gameengine.attributes.Path"/>
+        </entry>
+        <entry>
+          <java-class>gameengine.attributes.Spacial</java-class>
+          <gameengine.attributes.Spacial reference="../../../myAttributes/gameengine.attributes.Spacial"/>
+        </entry>
+      </myAttributeMap>
+      <myAbilitiesMap>
+        <entry>
+          <java-class>gameengine.systems.abilities.MoveForward</java-class>
+          <gameengine.systems.abilities.MoveForward reference="../../../myAbilityKeys/entry/gameengine.systems.abilities.MoveForward"/>
+        </entry>
+        <entry>
+          <java-class>gameengine.systems.abilities.CreateEntity</java-class>
+          <gameengine.systems.abilities.CreateEntity reference="../../../myAbilityKeys/entry[2]/gameengine.systems.abilities.CreateEntity"/>
+        </entry>
+      </myAbilitiesMap>
+    </myEntities>
+  </myEntities>
+  <myFakeEntities/>
+  <myEntitySearchMap/>
+  <myBaseEntities/>
+  <myPlayerEntities/>
+  <myCollisionSubsystems/>
+  <myZoneSubsystems/>
+  <myKeyToAbilityMap>
+    <myKeyToAbilityMap>
+      <KeyCode>W</KeyCode>
+      <Abilities class="gameengine.systems.abilities.MoveForward" reference="../../../myEntities/myEntities/myAbilityKeys/entry/gameengine.systems.abilities.MoveForward"/>
+    </myKeyToAbilityMap>
+    <myKeyToAbilityMap>
+      <KeyCode>L</KeyCode>
+      <Abilities class="gameengine.systems.abilities.CreateEntity" reference="../../../myEntities/myEntities/myAbilityKeys/entry[2]/gameengine.systems.abilities.CreateEntity"/>
+    </myKeyToAbilityMap>
+  </myKeyToAbilityMap>
+  <myControllerToIndexMap/>
+  <myControllerToAbilityMapList>
+    <myControllerToAbilityMapList>
+      <myControls/>
+    </myControllerToAbilityMapList>
+  </myControllerToAbilityMapList>
+  <myWinConditions/>
+  <myStatistics/>
+  <myOnClickAbility class="gameengine.systems.abilities.NullAbility"/>
+  <myOnClickNotifier class="javafx.beans.property.SimpleBooleanProperty">false</myOnClickNotifier>
+  <mapHeight>0.0</mapHeight>
+  <mapWidth>0.0</mapWidth>
+</gameengine.GameWorld>

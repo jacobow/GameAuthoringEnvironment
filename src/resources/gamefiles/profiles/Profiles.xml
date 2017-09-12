@@ -1,0 +1,18 @@
+<map>
+  <entry>
+    <string>Test Profile</string>
+    <gameplayer.profile.Profile>
+      <myName>Test Profile</myName>
+      <myUserID>2104599579</myUserID>
+      <myScoreListMap/>
+    </gameplayer.profile.Profile>
+  </entry>
+  <entry>
+    <string>Sam</string>
+    <gameplayer.profile.Profile>
+      <myName>Sam</myName>
+      <myUserID>82879</myUserID>
+      <myScoreListMap/>
+    </gameplayer.profile.Profile>
+  </entry>
+</map>

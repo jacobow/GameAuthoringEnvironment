@@ -1,0 +1,16 @@
+<gamedata.data.GameData>
+  <levels class="linked-hash-map">
+    <entry>
+      <string>Map1</string>
+      <gamedata.data.LevelData>
+        <gameName>Need4Furious</gameName>
+        <levelName>Map1</levelName>
+      </gamedata.data.LevelData>
+    </entry>
+  </levels>
+  <packageName>Need4Furious</packageName>
+  <currentLevelName>Map1</currentLevelName>
+  <gameName>Need4Furious</gameName>
+  <previousUserName>Default</previousUserName>
+  <userName>Default</userName>
+</gamedata.data.GameData>

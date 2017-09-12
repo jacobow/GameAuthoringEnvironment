@@ -1,0 +1,16 @@
+<gamedata.data.GameData>
+  <levels class="linked-hash-map">
+    <entry>
+      <string>Map1</string>
+      <gamedata.data.LevelData>
+        <gameName>RacingWithFriends</gameName>
+        <levelName>Map1</levelName>
+      </gamedata.data.LevelData>
+    </entry>
+  </levels>
+  <packageName>RacingWithFriends</packageName>
+  <currentLevelName>Map1</currentLevelName>
+  <gameName>RacingWithFriends</gameName>
+  <previousUserName>Default</previousUserName>
+  <userName>Default</userName>
+</gamedata.data.GameData>

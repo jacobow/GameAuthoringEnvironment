@@ -1,0 +1,123 @@
+.menu-bar {
+      -fx-text-fill: black;
+
+ }
+ .context-menu {
+     -fx-background-color: rgba(255, 255, 255, .3);
+       -fx-text-fill: white;
+ 	  -fx-font-size:12px;
+ }
+.menu {
+      -fx-text-fill: black;
+
+}
+.toggle-button{
+    -fx-background-color: rgba(255, 255, 255, .3);
+      -fx-text-fill: white;
+	  -fx-font-size:12px;
+}
+.menu:showing {
+      -fx-text-fill: black;
+
+ }
+.menu .label {
+      -fx-text-fill: black;
+
+ }
+.menu:showing .label {
+      -fx-text-fill: black;
+
+ }
+.button {
+    -fx-background-color: rgba(255, 255, 255, .3);
+      -fx-text-fill: white;
+	  -fx-font-size:12px;
+
+}
+.text-field{
+ -fx-background-color: rgba(255, 255, 255, .5);
+ -fx-background-size: 25px;
+ -fx-background-insets: -1.4, 1;
+}
+#textFieldAlt{
+ -fx-background: url("search.png");
+ -fx-background-size: 25px;
+ -fx-background-insets: -1.4, 1;
+}
+.toggle-button hover{
+    -fx-background-color: rgba(255, 255, 255, .5);
+       -fx-background-radius: 5,4,3,5;
+       -fx-background-insets: 0,1,2,0;
+       -fx-text-fill: white;
+	   -fx-font-size:12px;
+	   -fx-background-insets: 0,1,2,3;
+	   -fx-background-radius: 3,2,2,2;
+
+}
+.button hover{
+    -fx-background-color: rgba(255, 255, 255, .5);
+       -fx-background-radius: 5,4,3,5;
+       -fx-background-insets: 0,1,2,0;
+       -fx-text-fill: white;
+	   -fx-font-size:12px;
+	   -fx-background-insets: 0,1,2,3;
+	   -fx-background-radius: 3,2,2,2;
+
+}
+.toggle-button selected{
+
+    -fx-background-color: rgba(255, 255, 255, .8);
+       -fx-background-radius: 5,4,3,5;
+       -fx-background-insets: 0,1,2,0;
+       -fx-text-fill: white;
+	   -fx-font-size:12px;
+	   -fx-background-insets: 0,1,2,3;
+	       -fx-background-radius: 3,2,2,2;
+
+}
+.button armed{
+
+
+
+    -fx-background-color: rgba(255, 255, 255, .8);
+       -fx-background-radius: 5,4,3,5;
+       -fx-background-insets: 0,1,2,0;
+       -fx-text-fill: white;
+	   -fx-font-size:12px;
+	   -fx-background-insets: 0,1,2,3;
+	       -fx-background-radius: 3,2,2,2;
+
+}
+
+#end {
+  -fx-background-color: rgba(255, 255, 255, .5);
+
+}
+#pane {
+  -fx-background-image:url("BackgroundSpace.jpg");
+}
+#clearPane {
+  -fx-background-color: rgba(255, 255, 255, 0);
+  }
+.scroll-pane {
+   -fx-background-color:rgba(255, 255, 255, 0);
+}
+#myLabel{
+    -fx-background-color: rgba(255, 255, 255, .5);
+       -fx-background-radius: 5,4,3,5;
+       -fx-background-insets: 0,1,2,0;
+       -fx-text-fill: white;
+	   -fx-font-size:12px;
+	   -fx-background-insets: 0,1,2,3;
+	   -fx-background-radius: 3,2,2,2;
+}
+.label{
+
+     -fx-background-radius: 5,4,3,5;
+     -fx-background-insets: 0,1,2,0;
+     -fx-text-fill: white;
+   -fx-font-size:15px;
+   -fx-background-insets: 0,1,2,3;
+       -fx-background-radius: 3,2,2,2;
+
+}

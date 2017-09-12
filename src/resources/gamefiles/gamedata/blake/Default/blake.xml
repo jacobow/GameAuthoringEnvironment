@@ -1,0 +1,25 @@
+<gamedata.data.GameData>
+  <levels class="linked-hash-map">
+    <entry>
+      <string>michelle</string>
+      <gamedata.data.LevelData>
+        <gameName>blake</gameName>
+        <levelName>michelle</levelName>
+        <background>resources/asphalt.jpg</background>
+      </gamedata.data.LevelData>
+    </entry>
+    <entry>
+      <string>larissa</string>
+      <gamedata.data.LevelData>
+        <gameName>blake</gameName>
+        <levelName>larissa</levelName>
+      </gamedata.data.LevelData>
+    </entry>
+  </levels>
+  <packageName>blake</packageName>
+  <currentLevelName>michelle</currentLevelName>
+  <gameName>blake</gameName>
+  <previousUserName>Default</previousUserName>
+  <userName>Default</userName>
+  <icon>resources\backbutton.png</icon>
+</gamedata.data.GameData>

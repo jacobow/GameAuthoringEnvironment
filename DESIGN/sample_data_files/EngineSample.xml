@@ -1,0 +1,52 @@
+<Game name = "Game">
+	<Author>
+		myAuthor
+	</Author>
+	<MapHeight>
+		1000
+	</MapHeight>
+	<MapWidth>
+		1000
+	</MapWidth>	
+	<WinCondition>
+		BaseDestruction
+	</WinCondition>
+	<CollisionSystems>
+		<CollisionSubsystem subsystem="CharacterScenery">
+			StopMovement
+		</CollisionSubsystem>
+	</CollisionSystems>	
+	<Entities>
+		<Entity id="1"> 
+			<Component attribute="Movable"> 
+				<Parameter input="startingX">0</Parameter>
+				<Parameter input="startingY">0</Parameter>
+				<Parameter input="startingOrientation">0</Parameter>
+				<Parameter input="image">src/resources/duketurtle.png</Parameter>
+			</Component>
+			<Component attribute="Physical">  
+				<Parameter input="physical">true</Parameter>
+			</Component>
+		</Entity>
+		<Entity id="2"> 
+			<Component attribute="Spacial"> 
+				<Parameter input="startingX">0</Parameter>
+				<Parameter input="startingY">0</Parameter>
+				<Parameter input="startingOrientation">0</Parameter>
+				<Parameter input="image">turtle.png</Parameter>
+			</Component>
+			<Component attribute="Physical">  
+				<Parameter input="isPhysical">true</Parameter>
+			</Component>
+		</Entity>
+	</Entities>
+	<KeyMap>
+		<Key input="w">
+			<Ability> MoveLeft </Ability>
+			<Entity>1</Entity>
+		</Key>
+	</KeyMap>
+	<Achievements>
+		<Achievement type="Kill Count">10</Achievement>
+	</Achievements>
+</Game>

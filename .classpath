@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<classpath>
+	<classpathentry kind="src" path="src"/>
+	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER"/>
+	<classpathentry kind="lib" path="lib/xstream-1.4.9.jar"/>
+	<classpathentry kind="lib" path="lib/xstream-doc.jar"/>
+	<classpathentry kind="lib" path="lib/xstream-src.jar"/>
+	<classpathentry kind="lib" path="lib/reflections-0.9.10.jar"/>
+	<classpathentry kind="lib" path="lib/javassist.jar"/>
+	<classpathentry kind="lib" path="lib/restfb-1.34.1.jar"/>
+	<classpathentry kind="lib" path="lib/selenium-server-standalone-3.0.1.jar"/>
+	<classpathentry kind="lib" path="lib/guava-r07.jar"/>
+	<classpathentry kind="lib" path="lib/lwjgl-2.9.3/jar/lwjgl_util.jar">
+		<attributes>
+			<attribute name="org.eclipse.jdt.launching.CLASSPATH_ATTR_LIBRARY_PATH_ENTRY" value="voogasalad_upsidedownsmiley/lib/lwjgl-2.9.3/native"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="lib" path="lib/lwjgl-2.9.3/jar/jinput.jar">
+		<attributes>
+			<attribute name="org.eclipse.jdt.launching.CLASSPATH_ATTR_LIBRARY_PATH_ENTRY" value="voogasalad_upsidedownsmiley/lib/lwjgl-2.9.3/native"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="lib" path="lib/lwjgl-2.9.3/jar/lwjgl.jar">
+		<attributes>
+			<attribute name="org.eclipse.jdt.launching.CLASSPATH_ATTR_LIBRARY_PATH_ENTRY" value="voogasalad_upsidedownsmiley/lib/lwjgl-2.9.3/native"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="output" path="bin"/>
+</classpath>

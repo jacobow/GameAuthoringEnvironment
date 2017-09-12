@@ -1,0 +1,23 @@
+<gamedata.data.GameData>
+  <levels class="linked-hash-map">
+    <entry>
+      <string>SimpleMaze</string>
+      <gamedata.data.LevelData>
+        <gameName>DemoMaze</gameName>
+        <levelName>SimpleMaze</levelName>
+      </gamedata.data.LevelData>
+    </entry>
+    <entry>
+      <string>AdvancedMaze</string>
+      <gamedata.data.LevelData>
+        <gameName>DemoMaze</gameName>
+        <levelName>AdvancedMaze</levelName>
+      </gamedata.data.LevelData>
+    </entry>
+  </levels>
+  <packageName>DemoMaze</packageName>
+  <currentLevelName>SimpleMaze</currentLevelName>
+  <gameName>DemoMaze</gameName>
+  <previousUserName>Default</previousUserName>
+  <userName>Default</userName>
+</gamedata.data.GameData>

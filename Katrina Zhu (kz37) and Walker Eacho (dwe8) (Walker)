@@ -1,0 +1,17 @@
+Katrina Zhu (kz37) and Walker Eacho (dwe8) spoke at length about VOOGASalad design. 
+
+###Walker: 
+
+#####Part 1
+ * Adding new abilities / attributes is easy.
+ * By abusing interfaces that describe the basic functions of abilities/attributes allow for much more encapuslation. 
+ * Engine is linked through an external interface to the game player. It receives files from the game authoring environment. 
+ * Most of my focus is on key input/mouse input etc. I hope to catch bad input by ignoring it through maps which only contain usable input systems. 
+ * Because most of our design relies on objects with attributes, the ability to make new attributes easily makes this good design. The same goes for activatable abilities. 
+
+#####Part 2
+ * I'm most excited to add support for game controllers to our movement capabilities. 
+ * I'm most worried about integration between data and the engine factories, particularly as more features get added. 
+ * I plan on taking a small break this weekend and working on other courses as well as HackDuke as I frontloaded a huge amount of work for this course.
+ * The use cases vary a lot in description and size, but all seem appropriate. 
+ * We do not, but I feel like error correction/checking should count as part of the use case for every feature that could throw an error. 

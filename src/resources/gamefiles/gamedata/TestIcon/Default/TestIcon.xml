@@ -1,0 +1,17 @@
+<gamedata.data.GameData>
+  <levels class="linked-hash-map">
+    <entry>
+      <string>LevelOne</string>
+      <gamedata.data.LevelData>
+        <gameName>TestIcon</gameName>
+        <levelName>LevelOne</levelName>
+      </gamedata.data.LevelData>
+    </entry>
+  </levels>
+  <packageName>TestIcon</packageName>
+  <currentLevelName>LevelOne</currentLevelName>
+  <gameName>TestIcon</gameName>
+  <previousUserName>Default</previousUserName>
+  <userName>Default</userName>
+  <icon>resources\fb_icon.png</icon>
+</gamedata.data.GameData>

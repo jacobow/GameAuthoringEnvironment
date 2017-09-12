@@ -1,0 +1,17 @@
+<gamedata.data.GameData>
+  <levels class="linked-hash-map">
+    <entry>
+      <string>pleasework</string>
+      <gamedata.data.LevelData>
+        <gameName>blaketest</gameName>
+        <levelName>pleasework</levelName>
+      </gamedata.data.LevelData>
+    </entry>
+  </levels>
+  <packageName>blaketest</packageName>
+  <currentLevelName>pleasework</currentLevelName>
+  <gameName>blaketest</gameName>
+  <previousUserName>Default</previousUserName>
+  <userName>Default</userName>
+  <icon>resources/backbutton.png</icon>
+</gamedata.data.GameData>

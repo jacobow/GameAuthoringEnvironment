@@ -1,0 +1,302 @@
+
+<html>
+ 
+<head>
+ <title>CompSci 308 : Fall 2016</title>
+ <meta http-equiv="content-language" content="en-us" />
+ <meta http-equiv="content-type" content="text/html; charset=iso-8859-1" />
+ <meta http-equiv="content-style-type" content="text/css" />
+ <meta name="author" content="David Walker Eacho" />
+ <meta name="robots" content="all" />
+ <link rel="stylesheet" href="help_file.css">
+</head>
+
+<body>
+<div class="contentPane">
+<h1>Hello and Welcome to Vooga</h1><br>
+<!-- Modified to fit formatting by Walker Eacho-->
+
+<p>This help file is to tell you about our attributes</p>
+
+<TABLE BORDER="1">
+<TR>
+	<TH>Attribute</TH>
+	<TH>Function</TH>
+	<TH>Setable Parameters</TH>
+</TR>
+<TR>
+  <TD>Base</TD>
+  <TD>The Base attribute denotes where the goal location is for various win conditions. 
+  </br>The base is <i>needed</i> to use CollisionWinCondition, EntiretyWinCondition, and ZeroHealthWinCondition </TD>
+  <TD>
+   <p>This Attribute takes no parameters</p>
+  </TD>
+</TR>
+<TR>
+  <TD>Blocks</TD>
+  <TD>This assigns the <i>Blocked</i> attribute to an entity.</br>
+  This is done on collision if the BlockHandler is being used.</TD>
+  <TD>
+    <dt><li>Total Time</li></dt>
+    </br><dd><li>The length of time the <i>block</i> is applied for</li></dd>
+  </TD>
+</TR>
+<TR>
+  <TD>Blocked</TD>
+  <TD>This attribute will block the next effect that comes in be it</br>damage, poison, or slow. This effect lasts for a defined period of time</TD>
+  <TD>
+    <dt><li>Total Time</li></dt>
+    </br><dd><li>The amount of time the block will last for</li></dd>
+  </TD>
+</TR>
+<TR>
+  <TD>Carryable</TD>
+  <TD>Denotes if the object can be picked up by a <i>Player</i></TD>
+  <TD>
+    <p>No Parameters</p>
+  </TD>
+</TR>
+<TR>
+  <TD>Child</TD>
+  <TD>This attribute denotes if the entity is the Child of another attribute. This gives it access to that entity's information</TD>
+  <TD>
+    <p>No Parameters can be set by the user</p>
+  </TD>
+</TR>
+<TR>
+  <TD>CleanUp</TD>
+  <TD>This marks the attribute for cleanup. If it is cleaned up successfully, it will be deleted.</TD>
+  <TD>
+    <p>No parameters</p>
+  </TD>
+</TR>
+<TR>
+  <TD>Damages</TD>
+  <TD>Applies damage to attributes on collision (When the DamageHandler is used)</TD>
+  <TD>
+    <dt><li>Damage Done</li></dt>
+    </br><dd><li>The amount of damage applied per tick</li></dd>
+    <dt><li>Total Time</li></dt>
+    </br><dd><li>Amount of time to apply damage for. </br>
+    Set total time to -1.0 for continuous damage or if the damage should always be applied.</li></dd>
+  </TD>
+</TR>
+<TR>
+  <TD>Energy</TD>
+  <TD>This attribute gives the entity energy.</TD>
+  <TD>
+    <dt><li>MaxEnergy</li></dt>
+    </br><dd><li>Total amount of energy the entity can have</li></dd>
+  </TD>
+</TR>
+<TR>
+  <TD>FinishLine</TD>
+  <TD>This attribute is used like a Base for the FinishLineWinCondition. The finish line is one way, determined by the direction</TD>
+  <TD>
+    <dt><li>MaxEntities</li></dt>
+    </br><dd><li>The number of entities which will be racing</li></dd>
+    <dt><li>MaxLaps</li></dt>
+    </br><dd><li>Number of laps before the race is over</li></dd>
+  </TD>
+</TR>
+<TR>
+  <TD>Guard</TD>
+  <TD>This, combined with a Zone and the StealthHandler (zone handler) will "catch" respawnable entities and send them to their spawn point. </TD>
+  <TD>
+    <p>No Parameters</p>
+  </TD>
+</TR>
+<TR>
+  <TD>Health</TD>
+  <TD>Assigns health to an entity.</TD>
+  <TD>
+    <dt><li>MaxHealth</li></dt>
+    </br><dd><li>Maximum amount of health the entity can have</li></dd>
+    <dt><li>Health</li></dt>
+    </br><dd><li>The amount of health the entity currently has</li></dd>
+  </TD>
+</TR>
+<TR>
+  <TD>KillDeathCount</TD>
+  <TD>Keeps track of how many kills and deaths are associated with this entity.</TD>
+  <TD>
+    <p>No parameters</p>
+  </TD>
+</TR>
+<TR>
+  <TD>Level</TD>
+  <TD>Gives an RPG styled level to an entity </TD>
+  <TD>
+    <dt><li>Level</li></dt>
+    </br><dd><li>The initial level</li></dd>
+  </TD>
+</TR>
+<TR>
+  <TD>Path</TD>
+  <TD>Allows an object to have an automated path</TD>
+  <TD>
+    <dt><li>Repeating</li></dt>
+    </br><dd><li>Should the path repeat</li></dd>
+  </TD>
+</TR>
+<TR>
+  <TD>Physical</TD>
+  <TD>Allows the object to participate in collisions</TD>
+  <TD>
+   <p>No Parameters</p>
+  </TD>
+</TR>
+<TR>
+  <TD>Player</TD>
+  <TD>Determines if the entity is a Player.
+  </br>Players are the only entities that can win games</TD>
+  <TD>
+    <p>No Parameters</p>
+  </TD>
+</TR>
+<TR>
+
+  <TD>Poisons</TD>
+  <TD>Applies a damage over time poison to entities on collision</br>if the PoisonHandler is used</TD>
+  <TD>
+    <dt><li>TotalTime</li></dt>
+    </br><dd><li>Amount of time it lasts for</li></dd>
+    <dt><li>Damage</li></dt>
+    </br><dd><li>Amount of damage applied per tick</li></dd>
+  </TD>
+</TR>
+<TR>
+  <TD>Range</TD>
+  <TD>Applies a Range for projectiles</TD>
+  <TD>
+    <dt><li>Range</li></dt>
+    </br><dd><li>Double value that the projectile will go for</li></dd>
+  </TD>
+</TR>
+<TR>
+  <TD>Respawnable</TD>
+  <TD>Determines if the entity will respawn</TD>
+  <TD>
+    <dt><li>Lives</li></dt>
+    </br><dd><li>Number of Lives the entity has
+    </br>Only works with the right handlers and stuff
+    </li></dd>
+    <dt><li>RespawnX</li></dt>
+    </br><dd><li>X Location of the Spawner</li></dd>
+    <dt><li>RespawnY</li></dt>
+    </br><dd><li>Y Location of the Spawner</li></dd>
+  </TD>
+</TR>
+<TR>
+  <TD>Shield</TD>
+  <TD>Applies a damage shield to things on contact</TD>
+  <TD>
+    <dt><li>Param1</li></dt>
+    </br><dd><li>Description</li></dd>
+    <dt><li>Param2</li></dt>
+    </br><dd><li>Description 2</li></dd>
+    <dt><li>Param3?</li></dt>
+    </br><dd><li>Description3</li></dd>
+  </TD>
+</TR>
+<TR>
+  <TD>Shielded</TD>
+  <TD>Write about the function here</TD>
+  <TD>
+    <dt><li>Param1</li></dt>
+    </br><dd><li>Description</li></dd>
+    <dt><li>Param2</li></dt>
+    </br><dd><li>Description 2</li></dd>
+    <dt><li>Param3?</li></dt>
+    </br><dd><li>Description3</li></dd>
+  </TD>
+</TR>
+<TR>
+  <TD>Slow</TD>
+  <TD>Write about the function here</TD>
+  <TD>
+    <dt><li>Param1</li></dt>
+    </br><dd><li>Description</li></dd>
+    <dt><li>Param2</li></dt>
+    </br><dd><li>Description 2</li></dd>
+    <dt><li>Param3?</li></dt>
+    </br><dd><li>Description3</li></dd>
+  </TD>
+</TR>
+<TR>
+  <TD>Slowed</TD>
+  <TD>Write about the function here</TD>
+  <TD>
+    <dt><li>Param1</li></dt>
+    </br><dd><li>Description</li></dd>
+    <dt><li>Param2</li></dt>
+    </br><dd><li>Description 2</li></dd>
+    <dt><li>Param3?</li></dt>
+    </br><dd><li>Description3</li></dd>
+  </TD>
+</TR>
+<TR>
+  <TD>Spacial</TD>
+  <TD>Write about the function here</TD>
+  <TD>
+    <dt><li>Param1</li></dt>
+    </br><dd><li>Description</li></dd>
+    <dt><li>Param2</li></dt>
+    </br><dd><li>Description 2</li></dd>
+    <dt><li>Param3?</li></dt>
+    </br><dd><li>Description3</li></dd>
+  </TD>
+</TR>
+<TR>
+  <TD>Team</TD>
+  <TD>Write about the function here</TD>
+  <TD>
+    <dt><li>Param1</li></dt>
+    </br><dd><li>Description</li></dd>
+    <dt><li>Param2</li></dt>
+    </br><dd><li>Description 2</li></dd>
+    <dt><li>Param3?</li></dt>
+    </br><dd><li>Description3</li></dd>
+  </TD>
+</TR>
+<TR>
+  <TD>Turret</TD>
+  <TD>Write about the function here</TD>
+  <TD>
+    <dt><li>Param1</li></dt>
+    </br><dd><li>Description</li></dd>
+    <dt><li>Param2</li></dt>
+    </br><dd><li>Description 2</li></dd>
+    <dt><li>Param3?</li></dt>
+    </br><dd><li>Description3</li></dd>
+  </TD>
+</TR>
+<TR>
+  <TD>Visible</TD>
+  <TD>Write about the function here</TD>
+  <TD>
+    <dt><li>Param1</li></dt>
+    </br><dd><li>Description</li></dd>
+    <dt><li>Param2</li></dt>
+    </br><dd><li>Description 2</li></dd>
+    <dt><li>Param3?</li></dt>
+    </br><dd><li>Description3</li></dd>
+  </TD>
+</TR>
+<TR>
+  <TD>Zone</TD>
+  <TD>Write about the function here</TD>
+  <TD>
+    <dt><li>Param1</li></dt>
+    </br><dd><li>Description</li></dd>
+    <dt><li>Param2</li></dt>
+    </br><dd><li>Description 2</li></dd>
+    <dt><li>Param3?</li></dt>
+    </br><dd><li>Description3</li></dd>
+  </TD>
+</TR>
+</TABLE>
+
+</div>
+</body>
+</html>
